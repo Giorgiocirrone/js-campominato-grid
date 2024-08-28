@@ -61,7 +61,10 @@ header {
 
 }
 
+.cell .clicked {
 
+    background-color: blue;
+}
 
 
 

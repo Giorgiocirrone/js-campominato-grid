@@ -28,6 +28,22 @@ Note:
 
 */
 
+//creazione funzione 
+
+
+function createCell() {
+
+    const cell = document.createElement('div');
+    cell.className = 'cell';
+    return cell; //restituisce la cella 
+}
+
+
+
+
+
+
+
 
 //milestone 2 
 
@@ -40,23 +56,38 @@ const grid = document.getElementById('grid');
 
 const row = 10;
 const cols = 10;
-
 const totalCells = row * cols; //variabile per la centralizzazione 
 
 
 //fase di elaborazione 
 
 for (let i = 0; i < totalCells; i++) {
-
     //creo una cella 
 
-    const cell = document.createElement('div');//div con una classe 
-    cell.className = 'cell';
+    const cell = createCell();
 
-    //inserisco la cella 
+    //inserisco la cella in pagina 
+    //gestione al click della cella 
 
+    cell.addEventListener('click', function () {
+        //mile stone 4 
+        console.log(`${i}`);
+
+        cell.classList.add('clicked');
+
+
+
+
+
+
+    })
     grid.appendChild(cell);
 
-
 }
+
+
+
+
+
+
 
