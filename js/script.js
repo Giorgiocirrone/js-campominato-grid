@@ -27,3 +27,36 @@ Note:
 
 
 */
+
+
+//milestone 2 
+
+//fase di preparazione recupero griglia 
+
+
+const grid = document.getElementById('grid');
+
+//impostazioni iniziali 
+
+const row = 10;
+const cols = 10;
+
+const totalCells = row * cols; //variabile per la centralizzazione 
+
+
+//fase di elaborazione 
+
+for (let i = 0; i < totalCells; i++) {
+
+    //creo una cella 
+
+    const cell = document.createElement('div');//div con una classe 
+    cell.className = 'cell';
+
+    //inserisco la cella 
+
+    grid.appendChild(cell);
+
+
+}
+
