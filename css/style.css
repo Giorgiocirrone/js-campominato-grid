@@ -7,11 +7,75 @@
 }
 
 
+body {
 
+    font-family: sans-serif;
+    background-color: #80ffd4;
+}
 
-/*utilities*/
+/*Utilities*/
 .contatiner {
 
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
 }
+
+
+
+
+
+header {
+
+    height: 70px;
+    padding: 0 20px;
+    line-height: 70px;
+    /*mi serve per centrare la scritta*/
+    background-color: white;
+
+}
+
+
+
+/*Grid-dinamic*/
+
+
+#grid {
+
+
+    width: 500px;
+    height: 500px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    /*questo perchè serve una griglia con tanti quadrati*/
+}
+
+.cell {
+
+
+    height: calc(100%/8);
+    /*altezza di grid diviso otto */
+    flex-basis: calc(100%/8);
+    border: 2px solid white;
+
+}
+
+
+
+
+
+
+
+
+
+/*
+
+color 
+
+#80ffd4
+
+
+
+
+*/
